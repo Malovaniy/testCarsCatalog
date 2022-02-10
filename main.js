@@ -1,5 +1,6 @@
 sel = x => document.querySelector(x)
 selAll = x => document.querySelectorAll(x)
+const regEmail = /[a-z]*@+[a-z]*/
 
 let arrCars = [
      {
@@ -244,12 +245,8 @@ function chengerSort() {
      let txt = sel(`.checktextNew`).innerText
      sel(`.checktextNew`).innerText = this.innerText
      this.innerText = txt;
-     if (sel(`.checktextNew`).innerText.includes('ascending')) {
-          sel('.rotateContent').style = 'transform: rotate(0deg)'
-     }
-     else {
-          sel('.rotateContent').style = 'transform: rotate(180deg)'
-     }
+     if (sel(`.checktextNew`).innerText.includes('ascending')) sel('.rotateContent').style = 'transform: rotate(0deg)';
+     else sel('.rotateContent').style = 'transform: rotate(180deg)';
      removeSortActive()
 }
 
@@ -277,5 +274,11 @@ selAll('.mySelect').forEach(function (e) {
           }
      })
 })
+
+sel('.bordWhite').addEventListener('click', e => {
+     if (regEmail.test(sel('#emailInp').value)) sel('#emailInp').style.border = `2px solid green`
+     else sel('#emailInp').style.border = `2px solid red`
+})
+
 
 render()

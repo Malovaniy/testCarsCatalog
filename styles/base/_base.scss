@@ -1,0 +1,129 @@
+
+*, *::after, *::before{
+     box-sizing: border-box !important;
+}
+
+@import 'variables';
+@font-face { font-family: Noto Sans; src: url('../../assets/fonts/NotoSans-Regular.ttf');}
+@font-face { font-family:Poppins; src: url('../../assets/fonts/Poppins-Regular.ttf');}
+
+body{
+     background-color: #E5E5E5 !important;
+}
+
+.btn:focus {
+     box-shadow: none !important;
+}
+h1, h3, h4, h5, h6, button, span, p{
+     font-family: Noto Sans !important;
+}
+
+h1{
+     font-size: 50px !important;
+     font-weight: 700 !important;
+     font-style: normal;
+     line-height: 68,1px 
+}
+
+h2{
+     font-size: 50px !important;
+     font-family: Poppins !important;
+     font-weight: 700 !important;
+}
+
+h3{
+     font-size: 30px !important;
+     font-weight: 600 !important;
+}
+
+h4{
+     font-size: 25px !important;
+     font-weight: 600 !important;
+}
+
+h5{
+     font-size: 20px !important;
+     font-weight: 500 !important;
+}
+
+h6{
+     font-size: 17px !important;
+     font-weight: 400 !important;
+}
+
+button{
+     font-weight: 500 !important;
+     font-size: 20px !important;
+}
+
+span{
+     font-weight: 500 !important;
+}
+
+p{
+     margin: 0!important;
+     font-family: Noto Sans !important;
+
+}
+.mybtn{
+     border-radius: 10px !important;
+     padding-left: 7% !important;
+     padding-right: 7% !important;
+}
+.bordGr{
+     border: $Color-primary-200 solid 2px !important;
+}
+
+.bordGr:hover{
+     background-color: $Color-primary-200 !important; 
+     color: #000 !important;
+     
+}
+.bordGr:active{
+     background-color: rgba($color: red, $alpha: 0) !important;
+     color: $Color-primary-200 !important;
+     transition: all 0.1s ;
+}
+.bordRed{
+     border: $Color-primary-300 solid 2px !important;
+     background-color: $Color-primary-300 !important;
+     color: $Color-secondary-500 !important;
+     
+}
+.bordRed:hover{
+     background-color: rgba($color: red, $alpha: 0) !important;
+     color: $Color-primary-300 !important;
+}
+.bordRed:active{
+     background-color:  $Color-primary-300  !important;
+     color: $Color-primary-200 !important;
+     transition: all 0.1s ;
+}
+
+.bordWhite{
+     padding: 0.5% !important ;
+     margin-bottom: 3px;
+     padding-left: 2% !important;
+     padding-right: 2% !important;
+     border: $Color-secondary-500 solid 2px !important;
+     background-color: $Color-secondary-500 !important;
+     color: $Color-primary-100 !important;
+}
+
+.bordWhite:hover{
+     background-color: rgba($color:  $Color-secondary-500 , $alpha: 0) !important;
+     color:  $Color-secondary-500  !important;
+}
+
+.bordWhite:active{
+     border: $Color-secondary-500 solid 2px !important;
+     background-color: $Color-secondary-500 !important;
+     color: $Color-primary-100 !important;
+}
+
+.cursorPointer{
+     cursor: pointer;
+}
+.cursorDefault{
+     cursor: default;
+}

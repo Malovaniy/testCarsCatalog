@@ -1,0 +1,26 @@
+.header{
+     @include flexBetween;
+     flex-direction: row;
+     padding-top: 1%;
+
+     .logo{
+          padding-top: 1%;
+     }
+     .navbar{
+          padding: 1%;
+          @include flexEvenly;
+          width: 40%;
+          
+          .navBtn{
+               color: white;
+               cursor: pointer;
+          }
+          .logoBtn{
+               margin-left: 1%;
+          }
+     }
+}
+
+
+
+

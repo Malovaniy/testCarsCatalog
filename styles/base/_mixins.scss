@@ -1,0 +1,18 @@
+@mixin flexBetween {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ @mixin flexAround {
+     display: flex;
+     justify-content: space-around;
+ }
+ @mixin flexEvenly {
+     display: flex;
+     justify-content: space-evenly;
+ }
+ @mixin flexCenterXY {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }

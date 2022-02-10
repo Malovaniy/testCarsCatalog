@@ -1,0 +1,87 @@
+.footerTopBg, .footerBgBottom{
+     background-color: #000 !important;
+}
+
+.footerBgBottom{
+     position: absolute !important;
+     margin-top: 6%;
+     height: 20vh !important;
+     width: 100% !important;
+
+     .footerBottom{
+          margin: auto;
+          width: 90%;
+          @include flexBetween;
+          align-items: center;
+     }
+}
+
+.fotterChildrow{
+     display: flex;
+     flex-direction: row;
+}
+
+.minFottWidth{
+     width: 23%;
+     padding: 3%;
+}
+
+.logoFooter{
+     width: 20%;
+}
+
+.footerTop{
+     height: 20vh !important;
+     width: 100% !important;
+     @include flexCenterXY;
+     flex-direction: row;
+     
+     .textFoterTop{
+          width: 30%;
+     }
+}
+
+.mycontainer{
+     margin: auto;
+     width: 60%;
+}
+.containerForQuestions{
+     background-color: $Color-secondary-500;
+     padding:  3% 5%;
+}
+
+.questions{
+     @include flexBetween;
+     padding:  0% 1%;
+}
+
+.activeQuestion{
+     padding: 1% 0%;
+     color: $Color-primary-300;
+}
+
+.active{
+     background-color: white;    
+}
+
+.activeText{
+     color: $Color-primary-300;
+}
+
+.listBox{
+     @include flexAround
+}
+.emailSubscriber{
+     min-width: 44%;
+     text-align: end;
+     input{
+          outline: none;
+          border-radius: 10px;
+          border: 1px solid $Color-secondary-300;
+          background-color: #000;
+          color: white;
+          padding: 1%;
+          padding-left: 2%;
+          padding-right: 42%;
+     }
+}

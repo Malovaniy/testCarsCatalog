@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: Noto Sans;
-  src: url("../../assets/fonts/NotoSans-Regular.ttf");
+  src: url(../../assets/fonts/NotoSans-Regular.ttf);
 }
 
 @font-face {
   font-family: Poppins;
-  src: url("../../assets/fonts/Poppins-Regular.ttf");
+  src: url(../../assets/fonts/Poppins-Regular.ttf);
 }
 
 body {

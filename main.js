@@ -276,8 +276,8 @@ selAll('.mySelect').forEach(function (e) {
 })
 
 sel('.bordWhite').addEventListener('click', e => {
-     if (regEmail.test(sel('#emailInp').value)) sel('#emailInp').style.border = `2px solid green`
-     else sel('#emailInp').style.border = `2px solid red`
+     if (regEmail.test(sel('#emailInp').value)) sel('#emailInp').style.border = `1px solid green`
+     else sel('#emailInp').style.border = `1px solid red`
 })
 
 

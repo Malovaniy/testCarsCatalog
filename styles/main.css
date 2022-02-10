@@ -3,16 +3,6 @@
           box-sizing: border-box !important;
 }
 
-@font-face {
-  font-family: Noto Sans;
-  src: url(../../assets/fonts/NotoSans-Regular.ttf);
-}
-
-@font-face {
-  font-family: Poppins;
-  src: url(../../assets/fonts/Poppins-Regular.ttf);
-}
-
 body {
   background-color: #E5E5E5 !important;
 }

@@ -67,7 +67,7 @@ let arrCars = [
           transmission: 'Automatic | ',
           fuel: 'Gas',
           price: '$18,620',
-          imgid: 8,
+          imgid: 6,
           class: 'disebletCar',
           class2: 'disebledCarSold',
           sold: 'sold'
@@ -146,7 +146,7 @@ let arrCars = [
           transmission: 'Automatic | ',
           fuel: 'Gas ',
           price: '$18,620 ',
-          imgid: 6,
+          imgid: 8,
      },
      {
           model: 'Lexus RX 350 F-SPORT',
@@ -218,7 +218,8 @@ function render() {
      arrCars.forEach((e, i) => {
           car = `       
           <div class="car ${e.class || ''}">
-          <div class="bgimg car${e.imgid}">
+          <div class="bgimg" style="background-image: url(./assets/img/Rectangle${e.imgid}.png);";
+          ">
           <span class="${e.class2 || ''}">${e.sold || ``}</span>
           </div>
           <p class="carName mt-2"> <span class="yearCar">${e.year}</span > <span class='modelCar'>${e.model}</span></p>

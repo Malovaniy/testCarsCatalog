@@ -35,10 +35,12 @@
           .mySelect{
                overflow: auto;
                border-radius: 10px;
-               padding: 5%;
+               padding: 0.5%;
                background-color: #E5E5E5 !important;
                border: $Color-secondary-300 2px solid !important ;
                z-index: 4;
+               position: absolute;
+               width: 10%;
           
                .mySelectRow{
                     @include flexBetween;
@@ -47,10 +49,7 @@
         
           }
           .mySelectTransform{
-               position: absolute !important;
-               padding: 0.5%;
-               height: 40vh;
-               width: 12%;
+               max-height: 40vh;
           }
      }
 }

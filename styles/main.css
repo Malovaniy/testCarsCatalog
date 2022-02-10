@@ -288,7 +288,7 @@ p {
 }
 
 .emailSubscriber {
-  min-width: 44%;
+  min-width: 50%;
   text-align: end;
 }
 
@@ -347,10 +347,12 @@ p {
 .selectBox .fixingBox .mySelect, .sortCatalog .fixingBox .mySelect {
   overflow: auto;
   border-radius: 10px;
-  padding: 5%;
+  padding: 0.5%;
   background-color: #E5E5E5 !important;
   border: #BDBDBD 2px solid !important;
   z-index: 4;
+  position: absolute;
+  width: 10%;
 }
 
 .selectBox .fixingBox .mySelect .mySelectRow, .sortCatalog .fixingBox .mySelect .mySelectRow {
@@ -367,10 +369,7 @@ p {
 }
 
 .selectBox .fixingBox .mySelectTransform, .sortCatalog .fixingBox .mySelectTransform {
-  position: absolute !important;
-  padding: 0.5%;
-  height: 40vh;
-  width: 12%;
+  max-height: 40vh;
 }
 
 .rotateContent {

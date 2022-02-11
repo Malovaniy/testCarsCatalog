@@ -358,6 +358,10 @@ p {
           flex-direction: row;
 }
 
+.selectBox .fixingBox .mySelectColBrRed, .sortCatalog .fixingBox .mySelectColBrRed {
+  border: #DF4E3C 2px solid !important;
+}
+
 .selectBox .fixingBox .mySelectTransform, .sortCatalog .fixingBox .mySelectTransform {
   max-height: 40vh;
 }

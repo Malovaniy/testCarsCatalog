@@ -265,6 +265,7 @@ selAll('.mySelect').forEach(function (e) {
                     if (el.parentElement.id === e.id) {
                          el.addEventListener('click', function () {
                               sel(`#${e.id}Tx`).innerText = this.innerText
+                              e.classList.add('mySelectColBrRed')
                          })
                     }
                })
@@ -276,8 +277,8 @@ selAll('.mySelect').forEach(function (e) {
 })
 
 sel('.bordWhite').addEventListener('click', e => {
-     if (regEmail.test(sel('#emailInp').value)) sel('#emailInp').style.border = `1px solid green`
-     else sel('#emailInp').style.border = `1px solid red`
+     if (regEmail.test(sel('#emailInp').value)) sel('#emailInp').style.border = `1px solid #507A36`
+     else sel('#emailInp').style.border = `1px solid #DF4E3C`
 })
 
 

@@ -41,13 +41,17 @@
                z-index: 4;
                position: absolute;
                width: 10%;
-          
+               
                .mySelectRow{
                     @include flexBetween;
                     flex-direction: row;
                }
-        
+               
           }
+          .mySelectColBrRed{
+               border: $Color-primary-300 2px solid !important ;
+          }
+
           .mySelectTransform{
                max-height: 40vh;
           }
@@ -257,6 +261,4 @@
      opacity: 0;
      z-index: -1;
 }
-
-   
 
